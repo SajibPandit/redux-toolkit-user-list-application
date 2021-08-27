@@ -1,9 +1,12 @@
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
+import Home from './pages/Home';
 function App() {
   return (
-    <div className="App">
-      <h2>User List Application</h2>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Home}/>
+      </Switch>
+    </Router>
   );
 }
-
 export default App;
